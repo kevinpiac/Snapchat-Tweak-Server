@@ -1,0 +1,10 @@
+Package: com.yourcompany.snapchat-auth-server
+Name: snapchat-auth-server
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Kevin Piacentini
+Author: Kevin Piacentini
+Section: Tweaks
+Version: 0.0.1-6+debug
+Installed-Size: 152
