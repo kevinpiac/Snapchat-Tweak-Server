@@ -1,6 +1,5 @@
 #line 1 "Tweak.x"
 
-
 #include <substrate.h>
 #if defined(__clang__)
 #if __has_feature(objc_arc)
@@ -21,48 +20,20 @@
 #define _LOGOS_RETURN_RETAINED
 #endif
 
-@class SCLoginV2ViewController; 
-static void (*_logos_orig$_ungrouped$SCLoginV2ViewController$viewDidAppear$)(_LOGOS_SELF_TYPE_NORMAL SCLoginV2ViewController* _LOGOS_SELF_CONST, SEL, _Bool); static void _logos_method$_ungrouped$SCLoginV2ViewController$viewDidAppear$(_LOGOS_SELF_TYPE_NORMAL SCLoginV2ViewController* _LOGOS_SELF_CONST, SEL, _Bool); static id (*_logos_meta_orig$_ungrouped$SCLoginV2ViewController$sharedInstance)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCLoginV2ViewController$sharedInstance(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); 
+@class SCAPIAuth; 
+static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$appName)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCAPIAuth$appName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$appVersion)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCAPIAuth$appVersion(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id, id, id, id); static id _logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id, id, id, id); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id, _Bool, id); static id _logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id, _Bool, id); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id); static id _logos_meta_method$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL, id, id); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$schemeName)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCAPIAuth$schemeName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$userAgentHeader)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCAPIAuth$userAgentHeader(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id (*_logos_meta_orig$_ungrouped$SCAPIAuth$versionName)(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); static id _logos_meta_method$_ungrouped$SCAPIAuth$versionName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST, SEL); 
 
-#line 2 "Tweak.x"
+#line 1 "Tweak.x"
 
-
-
-static void _logos_method$_ungrouped$SCLoginV2ViewController$viewDidAppear$(_LOGOS_SELF_TYPE_NORMAL SCLoginV2ViewController* _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, _Bool arg1) {
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tweak." message:@"The tweak has been injected." delegate:self cancelButtonTitle:@":)" otherButtonTitles:@"Cool", nil];
-[alert show];
-  HBLogDebug(@"-[<SCLoginV2ViewController: %p> viewDidAppear:%d]: %@", self, arg1, (@"HELLLOO!111"));
-  NSLog(@"HELLLOOO!");
-  return _logos_orig$_ungrouped$SCLoginV2ViewController$viewDidAppear$(self, _cmd, arg1);
-}
-
-static id _logos_meta_method$_ungrouped$SCLoginV2ViewController$sharedInstance(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) {
-	return _logos_meta_orig$_ungrouped$SCLoginV2ViewController$sharedInstance(self, _cmd);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+static id _logos_meta_method$_ungrouped$SCAPIAuth$appName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) { HBLogDebug(@"+[<SCAPIAuth: %p> appName]", self); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$appName(self, _cmd); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$appVersion(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) { HBLogDebug(@"+[<SCAPIAuth: %p> appVersion]", self); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$appVersion(self, _cmd); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1, id arg2, id arg3, id arg4, id arg5) { HBLogDebug(@"+[<SCAPIAuth: %p> authenticationParametersForEndpoint:%@ authToken:%@ username:%@ parameters:%@ deviceIdManager:%@]", self, arg1, arg2, arg3, arg4, arg5); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$(self, _cmd, arg1, arg2, arg3, arg4, arg5); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1, id arg2, _Bool arg3, id arg4) { HBLogDebug(@"+[<SCAPIAuth: %p> authenticationParametersForUserWithToken:%@ username:%@ withDeviceInfo:%d deviceIdManager:%@]", self, arg1, arg2, arg3, arg4); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$(self, _cmd, arg1, arg2, arg3, arg4); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd, id arg1, id arg2) { HBLogDebug(@"+[<SCAPIAuth: %p> requestTokenForUserToken:%@ timestamp:%@]", self, arg1, arg2); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$(self, _cmd, arg1, arg2); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$schemeName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) { HBLogDebug(@"+[<SCAPIAuth: %p> schemeName]", self); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$schemeName(self, _cmd); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$userAgentHeader(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) { HBLogDebug(@"+[<SCAPIAuth: %p> userAgentHeader]", self); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$userAgentHeader(self, _cmd); HBLogDebug(@" = %@", r); return r; }
+static id _logos_meta_method$_ungrouped$SCAPIAuth$versionName(_LOGOS_SELF_TYPE_NORMAL Class _LOGOS_SELF_CONST __unused self, SEL __unused _cmd) { HBLogDebug(@"+[<SCAPIAuth: %p> versionName]", self); id r = _logos_meta_orig$_ungrouped$SCAPIAuth$versionName(self, _cmd); HBLogDebug(@" = %@", r); return r; }
 
 static __attribute__((constructor)) void _logosLocalInit() {
-{Class _logos_class$_ungrouped$SCLoginV2ViewController = objc_getClass("SCLoginV2ViewController"); Class _logos_metaclass$_ungrouped$SCLoginV2ViewController = object_getClass(_logos_class$_ungrouped$SCLoginV2ViewController); MSHookMessageEx(_logos_class$_ungrouped$SCLoginV2ViewController, @selector(viewDidAppear:), (IMP)&_logos_method$_ungrouped$SCLoginV2ViewController$viewDidAppear$, (IMP*)&_logos_orig$_ungrouped$SCLoginV2ViewController$viewDidAppear$);MSHookMessageEx(_logos_metaclass$_ungrouped$SCLoginV2ViewController, @selector(sharedInstance), (IMP)&_logos_meta_method$_ungrouped$SCLoginV2ViewController$sharedInstance, (IMP*)&_logos_meta_orig$_ungrouped$SCLoginV2ViewController$sharedInstance);} }
-#line 40 "Tweak.x"
+{Class _logos_class$_ungrouped$SCAPIAuth = objc_getClass("SCAPIAuth"); Class _logos_metaclass$_ungrouped$SCAPIAuth = object_getClass(_logos_class$_ungrouped$SCAPIAuth); MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(appName), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$appName, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$appName);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(appVersion), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$appVersion, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$appVersion);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(authenticationParametersForEndpoint:authToken:username:parameters:deviceIdManager:), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForEndpoint$authToken$username$parameters$deviceIdManager$);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(authenticationParametersForUserWithToken:username:withDeviceInfo:deviceIdManager:), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$authenticationParametersForUserWithToken$username$withDeviceInfo$deviceIdManager$);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(requestTokenForUserToken:timestamp:), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$requestTokenForUserToken$timestamp$);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(schemeName), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$schemeName, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$schemeName);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(userAgentHeader), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$userAgentHeader, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$userAgentHeader);MSHookMessageEx(_logos_metaclass$_ungrouped$SCAPIAuth, @selector(versionName), (IMP)&_logos_meta_method$_ungrouped$SCAPIAuth$versionName, (IMP*)&_logos_meta_orig$_ungrouped$SCAPIAuth$versionName);} }
+#line 11 "Tweak.x"
